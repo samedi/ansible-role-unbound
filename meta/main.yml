@@ -1,5 +1,8 @@
 ---
+dependencies: []
+
 galaxy_info:
+  role_name: unbound
   author: "DAUPHANT Julien"
   license: BSD
   min_ansible_version: 2.5
@@ -23,5 +26,3 @@ galaxy_info:
   categories:
    - networking
    - system
-dependencies: []
-
