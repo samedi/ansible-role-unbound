@@ -1,5 +1,9 @@
 # {{ ansible_managed }}
 
+server:
+# The following line will configure unbound to perform cryptographic
+# DNSSEC validation using the root trust anchor.
+
 {% for config in unbound_configuration %}
 {% for key, value in config.items() %}
     {{ key }}: {{ value }}

@@ -8,7 +8,7 @@ unbound_configuration:
     - do-ip6: "no"
     - num-threads: 1
     - pidfile: "/var/run/unbound.pid"
-    - logfile: "{{unbound_logfile}}"
+    - logfile: "{{ unbound_logfile }}"
 
 unbound_zone_name: "default"
 unbound_only_zones: false
@@ -72,4 +72,4 @@ unbound_pkg_state: present
 unbound_service_state: started
 
 # Service enabled on startup: yes or no
-unbound_service_enabled: yes
+unbound_service_enabled: true
