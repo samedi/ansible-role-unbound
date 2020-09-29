@@ -1,0 +1,12 @@
+---
+- name: test all the things
+  hosts: all
+
+  pre_tasks:
+    - name: update apt cache
+      apt: update_cache=yes cache_valid_time=600
+      when: ansible_os_family == 'Debian'
+      changed_when: false
+
+  roles:
+    - role: ansible-role-unbound

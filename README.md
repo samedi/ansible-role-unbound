@@ -1,6 +1,8 @@
 ansible-role-unbound
 ====================
 
+[![Build Status](https://travis-ci.com/samedi/ansible-role-unbound.svg?branch=master)](https://travis-ci.com/samedi/ansible-role-unbound)
+
 Ansible role for Unbound DNS Server and resolver
 
 
